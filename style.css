@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(192, 226, 226);
+}
+.container {
+  width: 1200px;
+  background-color: rgb(56, 221, 199);
+  margin: 0 auto;
+}
+.page-title {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  border-radius: 10px;
+  background: rgb(38, 185, 166);
+}
+h2 {
+  text-align: center;
+  color: rgb(13, 77, 77);
+  font-size: 28px;
+}
+.wrap {
+  padding: 20px 20px;
+}
+.card {
+  width: 320px;
+  display: inline-block;
+  padding: 30px 10px;
+  margin: 20px 30px;
+  background: rgb(129, 156, 156);
+}
+.card-img {
+  width: 300px;
+  border-radius: 30px 0 30px 0;
+}
+.card-title {
+  text-align: center;
+  color: rgb(7, 58, 58);
+  padding-bottom: 10px;
+}
+.card-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: rgb(10, 78, 78);
+}
