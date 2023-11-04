@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: pacifico, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1, 7;
+  color: #909090;
+  text-align: center;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #303030;
+  margin: 30px 0;
+}
+.card {
+  max-width: 300px;
+  margin: 0 auto 50px;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(50, 50, 100, 0.25);
+}
+img {
+  max-width: 250px;
+  border-radius: 0.5rem;
+  padding-top: 5px;
+}
+.card-title,
+.card-subtitle {
+  color: #303030;
+}
+.card-text {
+  margin-bottom: 5px;
+}
+.text {
+  text-align: right;
+  color: blue;
+}
