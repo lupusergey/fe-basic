@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #c4c4c4;
+}
+.container {
+  max-width: 1000px;
+  margin: 50px auto 0;
+}
+.wrapper {
+  margin-bottom: 50px;
+  background: #e6e6e6;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #fc8f8f;
+  color: #fff;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 200px;
+}
+.float-left {
+  float: left;
+  margin-right: 1rem;
+}
+.float-right {
+  float: right;
+  margin-left: 1rem;
+}
+.squares {
+  float: right;
+}
+.square small {
+  float: left;
+}
+.small {
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  line-height: 100px;
+}
+.last {
+  margin: 0;
+}
+.clear {
+  clear: both;
+}
