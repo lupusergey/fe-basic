@@ -7,7 +7,7 @@ body {
   background: rgb(205, 240, 240);
 }
 .container {
-  max-width: 580px;
+  max-width: 600px;
   background: #fff;
   margin: 50px auto;
   padding: 10px 10px;
@@ -19,11 +19,8 @@ h1 {
 h3 {
   text-align: center;
 }
-.wrapper {
-  border: 1px solid;
-  padding: 0.25rem;
-}
 table {
+  margin: 0 auto;
   border: 1px solid;
 }
 tr,
@@ -34,13 +31,4 @@ td {
 }
 .yellow {
   background: yellow;
-}
-.float-right {
-  float: right;
-}
-.float-left {
-  float: left;
-}
-.clear {
-  clear: both;
 }
