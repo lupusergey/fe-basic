@@ -4,19 +4,78 @@
   box-sizing: border-box;
 }
 :root {
-  --container-width: 1110px;
+  --container-width: 1100px;
   --basic-space: 1rem;
-  --primary-color: #fff;
-  --secondary-color: #eeefff;
-  --text-color: #000;
+  --primary-color: #081b35;
+  --secondary-color: #e4e5f1;
+  --text-color: #fff;
 }
 html {
   font-family: roboto, sans-serif;
-  font-size: 16;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
-  color: #000;
+  color: #fff;
 }
 .container {
-  width: 100%;
+  width: 1100px;
+  margin: 0 auto;
+}
+/*------------------menu-----------*/
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: #242230;
+  padding: 0 50px;
+  border-bottom: 5px solid #134894;
+}
+.logo {
+  border: 2px solid #65b7d8;
+  border-radius: 20px 0 20px 0;
+}
+.topmenu {
+  display: flex;
+  margin-left: 50px;
+  gap: 50px;
+  list-style: none;
+}
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+.submenu {
+  min-width: 150px;
+}
+.menu {
+  min-width: 150px;
+  list-style: none;
+  position: absolute;
+  z-index: 5;
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+  transition: 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu .menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: 0.3s linear;
+}
+.topmenu .submenu:hover > .menu {
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(0deg);
+}
+.menu .submenu {
+  position: relative;
+}
+.menu .link {
+  border-bottom: 1px solid #000;
+  padding: 10px 20px;
+  background-color: #bcc2cc;
+  display: block;
 }
