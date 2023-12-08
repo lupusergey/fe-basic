@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fonts/css">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FORMS</title>
 </head>
 
 <body>
@@ -14,11 +14,55 @@
 
     </header>
     <main>
-
+        <section class="section-form">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="wrapper-form">
+                        <form onsubmit="">
+                            <div class="wrap-btn">
+                                <button class="form-btn-active" type="button">Вход</button>
+                                <button class="form-btn" type="button">Регистрация</button>
+                            </div>
+                            <h1 class="form-title">Вход</h1>
+                            <input class="email" type="text" placeholder="Введите email">
+                            <input class="password" type="password" placeholder="Пароль">
+                            <a class="link" href="#">Забыли пароль?</a>
+                            <button class="btn">Войти</button>
+                            <a class="link" href="https://uk-ua.facebook.com">
+                                <p class="link-text">Или войти через</p>
+                                <img class="link-img" src="./images/social.png" alt="foto">
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-form-bottom">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="wrapper-form">
+                        <form onsubmit="">
+                            <div class="wrap-btn">
+                                <button class="form-btn" type="button">Вход</button>
+                                <button class="form-btn-active" type="button">Регистрация</button>
+                            </div>
+                            <h1 class="form-title">Вход</h1>
+                            <input class="name" type="text" placeholder="Имя Фамилия">
+                            <input class="email" type="text" placeholder="Введите email">
+                            <div class="link-wrap">
+                                <input class="checkbox" type="checkbox">
+                                <p class="input-text">Запомнить меня.</p>
+                            </div>
+                            <button class="btn">Зарегистрироватся</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <fotter>
+    <footer>
 
-    </fotter>
+    </footer>
 </body>
 
 </html>
