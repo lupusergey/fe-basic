@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --container-width: 1240px;
+  --basic-space: 1rem;
+  --primary-color: #153416;
+  --secondary-color: #929191;
+  --text-color: #fff;
+}
+html {
+  font-family: roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+/*----------section-----------*/
+.wrapper {
+  background: url(../../images/priroda.png) no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.wrapper-form {
+  background: rgba(233, 233, 233, 0.25);
+  backdrop-filter: blur(5px);
+  max-width: 496px;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+.wrap-btn {
+  width: 340px;
+  margin: 60px 78px 75px;
+  border: 1px solid #153416;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.form-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  margin: 11px 50px;
+}
+.form-btn-active {
+  background-color: #153416;
+  color: var(--text-color);
+  padding: 11px 50px;
+  border-radius: 30px;
+  width: 170px;
+  border: none;
+}
+.form-title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 29px;
+  font-weight: 400;
+}
+input,
+.btn {
+  display: block;
+  margin: auto;
+}
+.btn {
+  background-color: #153416;
+  color: var(--text-color);
+  padding: 11px 50px;
+  border-radius: 30px;
+  width: 340px;
+  border: none;
+}
+.link,
+.link-text {
+  text-align: center;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 15px;
+}
+.text-left {
+  color: var(--primary-color);
+}
+.text-link {
+  color: var(--text-color);
+}
+.email,
+.password,
+.name {
+  width: 340px;
+  height: 44px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+::placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+.link,
+.link-text {
+  display: block;
+  margin: 20px auto 30px;
+  color: var(--primary-color);
+}
+.social {
+  max-width: 102px;
+  display: flex;
+  margin: 0 auto;
+  gap: 10px;
+}

@@ -23,7 +23,7 @@ html {
 }
 /*----------section-----------*/
 .wrapper {
-  background: url(../images/priroda.png) no-repeat center/cover;
+  background: url(../../images/priroda.png) no-repeat center/cover;
   height: 100vh;
   display: flex;
   flex-direction: row-reverse;
@@ -45,12 +45,10 @@ html {
   justify-content: space-between;
 }
 .form-btn {
-  margin: 11px 50px;
-}
-.form-btn {
   background: none;
   border: none;
   color: var(--text-color);
+  margin: 11px 50px;
 }
 .form-btn-active {
   background-color: #153416;
@@ -71,15 +69,6 @@ input,
   display: block;
   margin: auto;
 }
-.link,
-.link-text {
-  text-align: center;
-}
-.link,
-.link-active {
-  display: block;
-  text-align: center;
-}
 .email,
 .password,
 .name {
@@ -91,25 +80,19 @@ input,
   padding-left: 20px;
   margin-bottom: 15px;
 }
-.link {
-  padding-top: 6px;
-  margin-bottom: 30px;
-  color: var(--primary-color);
-}
-.link-text {
-  padding-top: 6px;
-  margin-bottom: 30px;
-  color: var(--primary-color);
+::placeholder {
+  color: var(--text-color);
+  font-size: 12px;
 }
 .link-wrap {
+  max-width: 340px;
   display: flex;
+  justify-content: space-between;
+  margin: 25px auto 30px;
 }
-.input-text {
-  margin: 0 190px 30px 10px;
-}
-.checkbox {
-  margin-right: 0;
-  margin-top: 0;
+.label-wrap {
+  display: flex;
+  gap: 10px;
 }
 .btn {
   background-color: #153416;
@@ -118,4 +101,9 @@ input,
   border-radius: 30px;
   width: 340px;
   border: none;
+}
+.text-bottom {
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 30px;
 }
