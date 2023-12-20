@@ -1,0 +1,199 @@
+@import "variables";
+.header {
+  .wrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    .wrap-right-top {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 6px;
+      .text {
+        color: $primary-color;
+      }
+      .tel-link {
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: 700;
+      }
+    }
+    .wrap-right-bottom {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      .link {
+        color: $secondary-color;
+        font-size: 16;
+        font-weight: 700;
+        text-decoration: none;
+        margin-top: 16px;
+      }
+      .link:hover {
+        color: #f0145a;
+        text-decoration: underline;
+      }
+    }
+    input[type="radio"] {
+      display: none;
+    }
+    label {
+      position: relative;
+      color: $primary-color;
+      font-size: 12px;
+      font-weight: 700;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 7px;
+    }
+    input[type="radio"]:checked + label {
+      background-color: #f0145a;
+      color: #fff;
+    }
+  }
+}
+.section-card {
+  padding: 60px 0;
+  .section-title {
+    margin: 0 auto 60px;
+    max-width: 1080px;
+    font-size: 38px;
+    font-weight: 700;
+    background: var(
+      --Gradient-Red-Text,
+      linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 0 auto;
+    .wrap-card {
+      width: 400px;
+      border-radius: 10px;
+      .image {
+        max-width: 100%;
+        max-height: 400px;
+        border-radius: 10px;
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .title {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 15px 0 5px;
+        color: $text-color;
+      }
+      .text {
+        font-size: 14px;
+        font-weight: 400;
+        color: $primary-color;
+      }
+    }
+    .wrap-card:hover {
+      background-color: $primary-color;
+      cursor: pointer;
+    }
+  }
+}
+footer {
+  margin: 30px auto;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    .top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 21px;
+      .top-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: $text-color;
+      }
+      .top-link {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .tel-link {
+        font-size: 16px;
+        font-weight: 700;
+        color: #46466e;
+        text-decoration: none;
+      }
+      .social-link {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+/*----------------header--------------*/
+@media (max-width: 900px) {
+  .header .wrapper {
+    display: inline-block;
+    .wrap-right-bottom {
+      justify-content: flex-start;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .header .wrapper .wrap-right-top {
+    justify-content: flex-start;
+    margin: 10px 0;
+  }
+  .header .wrapper .wrap-right-bottom {
+    flex-direction: column;
+    .link {
+      margin-top: 0;
+    }
+  }
+  .header .text {
+    display: none;
+  }
+}
+/*--------------card----------*/
+@media (max-width: 900px) {
+  .section-card .section-title {
+    font-size: 20px;
+    max-width: 500px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 1320px) {
+  .section-card .wrapper {
+    justify-content: center;
+  }
+}
+@media (max-width: 900px) {
+  .section-card .wrapper {
+    justify-content: center;
+  }
+  .section-card .wrapper .wrap-card {
+    width: 260px;
+  }
+}
+@media (max-width: 750px) {
+  .footer .wrapper {
+    flex-direction: column;
+  }
+  .footer .wrapper .wrap-right {
+    margin-top: 10px;
+  }
+}
