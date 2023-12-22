@@ -252,4 +252,12 @@ footer .wrapper .bottom .social-link {
   .footer .top {
     flex-direction: column;
   }
+  .footer .text {
+    text-align: center;
+  }
+}
+@media (max-width: 640px) {
+  .dot {
+    display: none;
+  }
 }/*# sourceMappingURL=common.css.map */

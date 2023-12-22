@@ -256,4 +256,12 @@ footer {
   .footer .top {
     flex-direction: column;
   }
+  .footer .text {
+    text-align: center;
+  }
+}
+@media (max-width: 640px) {
+  .dot {
+    display: none;
+  }
 }
