@@ -212,6 +212,24 @@ footer .wrapper .bottom .social-link {
     height: 460px;
   }
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 30px;
+  }
+  .section-card .wrapper {
+    justify-content: center;
+    gap: 30px;
+  }
+  .section-card .wrap-card {
+    max-width: 315px;
+    height: 362px;
+  }
+  .section-card .wrap-card .image {
+    width: 315px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
 /*----------footer----------*/
 @media (max-width: 800px) {
   .footer .wrapper {
@@ -227,6 +245,11 @@ footer .wrapper .bottom .social-link {
 }
 @media (max-width: 515px) {
   .footer .bottom {
+    flex-direction: column;
+  }
+}
+@media (max-width: 340px) {
+  .footer .top {
     flex-direction: column;
   }
 }/*# sourceMappingURL=common.css.map */
