@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --container-width: 1440px;
+  --container-width: 1320px;
   --basic-space: 1rem;
   --primary-color: #fff;
   --secondary-color: #eeefff;
@@ -18,13 +18,70 @@ html {
   color: #000;
 }
 .container {
-  max-width: 1440px;
+  width: 1320px;
   margin: 0 auto;
-  padding: 0 60px;
 }
 .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #e6e6f0;
+}
+#check-menu {
+  display: none;
+}
+@media (max-width: 640px) {
+  input [type="checkbox"] {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+  }
+  .label-burger {
+    top: 25px;
+    left: 5px;
+    z-index: 3;
+  }
+  .burger {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+  }
+  .burger span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transition: all 0.3s linear;
+    opacity: 1;
+  }
+  .burger span:first-child {
+    top: 10px;
+  }
+  .burger span:last-child {
+    top: 30px;
+  }
+  .burger span:nth-child(2) {
+    top: 20px;
+  }
+  #check-menu {
+    display: none;
+  }
+  .menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  #check-menu:checked ~ .menu {
+    max-height: 250px;
+    flex-direction: column;
+  }
 }

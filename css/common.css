@@ -17,26 +17,26 @@
   text-decoration: none;
   font-weight: 700;
 }
-.header .wrapper .nav {
+.header .wrapper .menu {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
 }
-.header .wrapper .nav .link {
+.header .wrapper .menu .link {
   color: #2aa3ff;
   font-size: 16;
   font-weight: 700;
   text-decoration: none;
   margin-top: 16px;
 }
-.header .wrapper .nav .link:hover {
+.header .wrapper .menu .link:hover {
   color: #f0145a;
   text-decoration: underline;
 }
-.header .wrapper input[type=radio] {
+.header input[type=radio] {
   display: none;
 }
-.header .wrapper label {
+.header label {
   position: relative;
   color: #b3b3ba;
   font-size: 12px;
@@ -45,7 +45,7 @@
   border-radius: 5px;
   padding: 5px 7px;
 }
-.header .wrapper input[type=radio]:checked + label {
+.header input[type=radio]:checked + label {
   background-color: #f0145a;
   color: #fff;
 }
@@ -147,20 +147,17 @@ footer .wrapper .bottom .social-link {
     display: inline-block;
     padding: 20px;
   }
-  .header .wrapper .nav {
+  .header .wrapper .menu {
     justify-content: flex-start;
   }
 }
-@media (max-width: 600px) {
-  .header .wrapper .wrap-right-top {
+@media (max-width: 640px) {
+  .header .wrap-right-top {
     justify-content: flex-start;
     margin: 10px 0;
   }
-  .header .wrapper .nav {
+  .header .menu {
     flex-direction: column;
-  }
-  .header .wrapper .nav .link {
-    margin-top: 0;
   }
   .header .text {
     display: none;
@@ -193,7 +190,7 @@ footer .wrapper .bottom .social-link {
   .footer .wrapper {
     flex-direction: column;
   }
-  .footer .wrapper .wrap-right {
+  .footer .wrap-right {
     margin-top: 10px;
   }
 }/*# sourceMappingURL=common.css.map */
