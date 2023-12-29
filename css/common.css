@@ -23,8 +23,8 @@
   text-decoration: none;
   font-weight: 700;
 }
-.header .wrapper .wrap-right-top .image:hover {
-  background-color: rgb(103, 103, 223);
+.header .wrapper .wrap-right-top .social:hover svg path {
+  fill: #f0145a;
 }
 .header .wrapper .wrap-right-bottom {
   grid-column: 2/3;
@@ -46,8 +46,13 @@
   color: #f0145a;
   border-bottom: 2px solid #f0145a;
 }
-.header .wrapper .menu .link:active {
+.header .wrapper .menu .link__active {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding-bottom: 3px;
   color: #f0145a;
+  border-bottom: 2px solid #f0145a;
 }
 .header input[type=radio] {
   display: none;
@@ -67,12 +72,8 @@
   color: #fff;
 }
 .header label:hover {
-  background-color: #e4e4ee;
-}
-
-.section-card {
-  padding: 60px 0;
-}
+  background-color: #f5f5fa;
+}/*# sourceMappingURL=common.css.map */
 .section-card .section-title {
   margin: 0 auto 60px;
   max-width: 1080px;
@@ -101,6 +102,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.section-card .wrapper .wrap-card .content:hover svg path {
+  stroke: #f0145a;
+  color: #f0145a;
 }
 .section-card .wrapper .wrap-card .title {
   font-size: 16px;
@@ -156,8 +161,8 @@ footer .wrapper .bottom .social-link {
   font-weight: 700;
   color: #2aa3ff;
 }
-footer .wrapper .bottom .image:hover {
-  background-color: rgb(103, 103, 223);
+footer .wrapper .bottom .social:hover svg path {
+  fill: #f0145a;
 }
 footer .wrapper .wrap-right .text {
   color: #b3b3ba;
@@ -195,8 +200,14 @@ footer .wrapper .wrap-right .text {
   }
 }
 @media (max-width: 647px) {
+  .container {
+    width: 647px;
+  }
   .header .wrapper {
     margin-top: 0;
+  }
+  .header .wrapper .wrap-left {
+    margin: 0 auto;
   }
   .header .wrap-right-top {
     justify-content: space-between;
@@ -207,6 +218,8 @@ footer .wrapper .wrap-right .text {
   }
   .header .wrap-right {
     background-color: #f5f5fa;
+    display: flex;
+    justify-content: center;
   }
   .nav {
     display: flex;
@@ -221,29 +234,52 @@ footer .wrapper .wrap-right .text {
   }
 }
 /*--------------card----------*/
-@media (min-width: 1600px) {
+@media (max-width: 2000px) {
   .container {
-    width: 1600px;
+    max-width: 1600px;
+    margin: auto;
   }
   .section-card .section-title {
-    max-width: 1380px;
+    max-width: 1360px;
   }
   .section-card .wrapper {
     justify-content: center;
   }
   .section-card .wrapper .wrap-card {
-    width: 493px;
+    width: 490px;
     height: 460px;
   }
   .section-card .wrapper .wrap-card .image {
-    max-width: 493px;
+    max-width: 490px;
     height: 400px;
     object-fit: cover;
   }
 }
-@media (max-width: 1320px) {
+@media (min-width: 1600px) {
   .container {
-    width: 1320px;
+    min-width: 1600px;
+    margin: auto;
+  }
+  .section-card .section-title {
+    min-width: 1360px;
+  }
+  .section-card .wrapper {
+    justify-content: center;
+  }
+  .section-card .wrapper .wrap-card {
+    width: 490px;
+    height: 460px;
+  }
+  .section-card .wrapper .wrap-card .image {
+    max-width: 490px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1320px;
+    margin: auto;
   }
   .section-card .section-title {
     width: 1080px;
@@ -260,9 +296,10 @@ footer .wrapper .wrap-right .text {
     object-fit: cover;
   }
 }
-@media (max-width: 1050px) {
+@media (max-width: 1320px) {
   .container {
-    width: 904px;
+    max-width: 904px;
+    margin: auto;
   }
   .section-card .section-title {
     width: 600px;
@@ -280,9 +317,10 @@ footer .wrapper .wrap-right .text {
     object-fit: cover;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 945px) {
   .container {
-    width: 648px;
+    max-width: 648px;
+    margin: auto;
   }
   .section-card .section-title {
     width: 600px;
@@ -300,11 +338,7 @@ footer .wrapper .wrap-right .text {
     object-fit: cover;
   }
 }
-@media (max-width: 647px) {
-  .container {
-    width: 345px;
-    margin: o auto;
-  }
+@media (max-width: 660px) {
   .section-card .wrapper {
     gap: 30px;
   }
