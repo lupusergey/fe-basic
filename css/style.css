@@ -151,6 +151,8 @@ ul {
   border-bottom: 4px solid #e6e6f0;
 }
 .contact-social {
+  display: block;
+  max-width: 160px;
   display: flex;
   align-items: flex-end;
   gap: 10px;
@@ -458,11 +460,17 @@ ul {
     border-bottom: none;
   }
   .nav.active .close {
+    display: block;
+    max-width: 32px;
+    margin-left: 300px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
   }
   .nav.active li:active {
     background-color: #e6e6f0;
+  }
+  .nav.active li.close-svg {
+    background-color: #fff;
   }
 }
 /*--------------section-contact--------------*/
